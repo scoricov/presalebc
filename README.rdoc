@@ -29,3 +29,14 @@ or
     HTTP 404 NOT FOUND if bonus code doesn’t belong to a product with provided product_id.
     HTTP 403 FORBIDDEN if bonus code hasn’t been sold.
 
+
+=== USAGE
+
+    rake db:setup
+    rspec
+    rails s
+    curl -D - 'http://localhost:3000/bonus_codes/validate?product_id=1&bonus_code=68483737392'
+    curl -D - 'http://localhost:3000/bonus_codes/validate?product_id=3&bonus_code=4000000019'
+    curl -D - 'http://localhost:3000/bonus_codes/validate?product_id=232323&bonus_code=4000000019'
+    curl -D - 'http://localhost:3000/bonus_codes/validate?product_id=zzzzsdd&bonus_code=asdasd'
+
