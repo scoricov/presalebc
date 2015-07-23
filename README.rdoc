@@ -32,6 +32,8 @@ or
 
 === USAGE
 
+    cd presalebc/
+    bundle install
     rake db:setup
     rspec
     rails s
